@@ -1,0 +1,11 @@
+.tag_background {
+    background: #FE6666;
+    border-radius: 20;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
