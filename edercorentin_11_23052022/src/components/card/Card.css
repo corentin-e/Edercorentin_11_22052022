@@ -1,0 +1,21 @@
+.card_background {
+    display: flex;
+    background: linear-gradient(#FE6666, #903C3C);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    align-items: flex-end;
+}
+
+.card_items_position {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .card_background {
+        height: 200px;
+    }
+}
