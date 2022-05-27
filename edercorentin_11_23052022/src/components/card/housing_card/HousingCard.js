@@ -1,6 +1,6 @@
-import './Card.css';
+import './HousingCard.css';
 
-function Card() {
+function HousingCard() {
   return (
     <div className="card_background">
         <div className="card_items_position">
@@ -10,4 +10,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default HousingCard;
