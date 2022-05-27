@@ -1,24 +1,23 @@
 import Header from '../../components/header/Header';
-import HousingCard from '../../components/card/housing_card/HousingCard';
-import './TestComponents.css';
+import './home.css';
 import Tag from '../../components/tag/Tag';
 import DropdownInfo from '../../components/inputs/dropdown_info/DropdownInfo';
 import SelectorEquipment from '../../components/inputs/selector/Selector';
-import WelcomeCard from '../../components/card/welcome_card/WelcomeCard';
+import { Banner, Card } from '../../components'
 
 
 
-function TestComponents() {
+function Home() {
   return (
     <div className="">
         <Header />
-        <HousingCard/>
+        <Card/>
         <Tag/>
         <DropdownInfo/>
         <SelectorEquipment/>
-        <WelcomeCard/>
+        <Banner/>
     </div>
   );
 }
 
-export default TestComponents;
+export default Home;
