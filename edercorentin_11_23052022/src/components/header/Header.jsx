@@ -12,7 +12,7 @@ function Header() {
           <label className="header_navbar_items">Acceuil</label>
         </Link>
         <Link to="about">
-          <label className="header_navbar_items">About</label>
+          <label className="header_navbar_items">À Propos</label>
         </Link>
       </div>
     </div>

@@ -3,10 +3,10 @@ import WelcomeImage from "../../assets/welcome_image.jpg";
 
 const Banner = () => (
   <div className="welcomecard_background">
-    <image src={WelcomeImage} className="welcomecard_image"></image>
-    {/* <div className="welcomecard_items_position">
-            <label className="welcomecard_item_position">Titre de la location</label>
-        </div> */}
+    <img src={WelcomeImage} className="welcomecard_image" alt="banner_image" />
+    <div className="welcomecard_items_position">
+        <label className="welcomecard_item_position">Chez vous, partout et ailleurs</label>
+    </div>
   </div>
 );
 

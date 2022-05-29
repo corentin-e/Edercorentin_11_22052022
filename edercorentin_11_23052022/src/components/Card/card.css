@@ -1,7 +1,6 @@
 .card_background {
   display: flex;
   background: linear-gradient(#fe6666, #903c3c);
-  width: 300px;
   height: 300px;
   border-radius: 10px;
   align-items: flex-end;

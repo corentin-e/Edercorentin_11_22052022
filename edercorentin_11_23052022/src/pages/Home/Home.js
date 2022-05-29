@@ -3,13 +3,12 @@ import { Banner, Card, DropdownList, DropdownInfo, Tag, Header } from "../../com
 
 function Home() {
   return (
-    <div className="">
+    <div className="homePage_items_position">
       <Header />
-      <Card />
-      <Tag />
-      <DropdownInfo />
-      <DropdownList />
       <Banner />
+      <div className="homePage_housing_background">
+        <Card/>
+      </div>
     </div>
   );
 }
