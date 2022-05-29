@@ -25,4 +25,8 @@
   .welcomecard_background {
     height: 100px;
   }
+
+  .welcomecard_items_position {
+    font-size: 20px;
+  }
 }

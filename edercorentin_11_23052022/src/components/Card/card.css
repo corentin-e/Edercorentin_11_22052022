@@ -1,20 +1,41 @@
 .card_background {
   display: flex;
-  background: linear-gradient(#fe6666, #903c3c);
+  width: 30%;
   height: 300px;
   border-radius: 10px;
+  overflow: hidden;
   align-items: flex-end;
+  margin-top: 20px;
+}
+
+.card_image {
+  height: 100%;
 }
 
 .card_items_position {
+  display: flex;
   color: white;
   font-size: 15px;
-  padding: 10px;
-  padding-bottom: 20px;
+  align-items: flex-end;
+  z-index: 1;
+  position: absolute;
+  width: 300px;
+}
+
+.card_text_position {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 @media screen and (max-width: 700px) {
   .card_background {
     height: 200px;
+    width: 100%;
   }
+
+  .card_image {
+    width: 100%;
+  }
+  
 }
