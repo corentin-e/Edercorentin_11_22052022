@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./DropdownInfo.css";
+import "./dropdown_info.css";
 
 function DropdownInfo() {
   const [isActiveDropDown, setIsActiveDropDown] = useState(false);

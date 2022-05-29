@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./Selector.css";
+import "./dropdown_list.css";
 
-function Selector() {
+function DropdownList() {
   const [isActiveSelector, setIsActiveSelector] = useState(false);
 
   const selectorButtonFunction = () => {
@@ -40,4 +40,4 @@ function Selector() {
   );
 }
 
-export default Selector;
+export default DropdownList;

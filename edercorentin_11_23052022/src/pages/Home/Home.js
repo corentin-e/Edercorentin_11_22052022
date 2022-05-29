@@ -1,9 +1,5 @@
-import Header from "../../components/header/Header";
 import "./home.css";
-import Tag from "../../components/tag/Tag";
-import DropdownInfo from "../../components/inputs/dropdown_info/DropdownInfo";
-import SelectorEquipment from "../../components/inputs/selector/Selector";
-import { Banner, Card } from "../../components";
+import { Banner, Card, DropdownList, DropdownInfo, Tag, Header } from "../../components";
 
 function Home() {
   return (
@@ -12,7 +8,7 @@ function Home() {
       <Card />
       <Tag />
       <DropdownInfo />
-      <SelectorEquipment />
+      <DropdownList />
       <Banner />
     </div>
   );

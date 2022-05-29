@@ -1,4 +1,4 @@
-import "./Tag.css";
+import "./tag.css";
 
 function Tag() {
   return <label className="tag_background">Tag name</label>;
