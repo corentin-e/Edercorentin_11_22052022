@@ -1,0 +1,19 @@
+.aboutPage_items_position {
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPage_dropdown_items_position {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.aboutPage_footer_position {
+    margin-top: 20px;
+}

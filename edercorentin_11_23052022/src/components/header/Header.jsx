@@ -11,6 +11,9 @@ function Header() {
         <Link to="/">
           <label className="header_navbar_items">Acceuil</label>
         </Link>
+        {/* <Link to="error">
+          <label className="header_navbar_items">Erreur</label>
+        </Link> */}
         <Link to="about">
           <label className="header_navbar_items">À Propos</label>
         </Link>

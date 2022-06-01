@@ -10,6 +10,10 @@
     flex-wrap: wrap;
 }
 
+.homePage_footer_position {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 700px) {
     .homePage_housing_position {
         flex-direction: column;

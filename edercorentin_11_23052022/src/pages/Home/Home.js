@@ -1,18 +1,22 @@
 import "./home.css";
-import { Banner, Card, DropdownList, DropdownInfo, Tag, Header } from "../../components";
+import { Banner, Card, Header, Footer } from "../../components";
 import data from "../../data.json"
 import React from "react";
+import WelcomeImage from "../../assets/welcome_image.jpg";
 
 function Home() {
   return (
     <div className="homePage_items_position">
       <Header />
-      <Banner />
+      <Banner image={WelcomeImage} textWelcome="Chez vous, partout et ailleurs" />
       <div className="homePage_housing_position">
-      {data.housings.map(housing => (
-        <Card key={housing.id} title={housing.title} image_source={housing.cover}/>
-      ))}
+        {data.housings.map(housing => (
+          <Card key={housing.id} title={housing.title} image_source={housing.cover}/>
+        ))}
       </div>
+      <div className="homePage_footer_position"/>
+        <Footer/>
+      <div/>
     </div>
   );
 }

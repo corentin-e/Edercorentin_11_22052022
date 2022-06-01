@@ -2,14 +2,20 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.dropdown_background {
   background-color: rgb(231, 221, 221);
   border-radius: 5px;
+  width: 100%;
 }
 
 .dropdown_header {
   background-color: #fe6666;
   border-radius: 5px;
   z-index: 1;
+  width: 100%;
 }
 
 .dropdown_items {

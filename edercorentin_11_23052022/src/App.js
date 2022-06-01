@@ -1,13 +1,9 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import Home from "./pages/Home/Home";
+import Error from "./pages/Error/Error";
 import React from "react";
-
-const Test = () => (
-  <Link to="/">
-    <span>Home</span>
-  </Link>
-);
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -15,7 +11,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/about" element={<Test />} />
+          <Route path="/error" element={<Error />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
