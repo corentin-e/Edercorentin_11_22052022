@@ -1,9 +1,12 @@
-import "./error.css";
+import "./housing.css";
 import { Header, Footer } from "../../components";
-import { Link } from "react-router-dom"
 import React from "react";
+import { useParams } from 'react-router-dom';
 
-function Housing() {
+const Housing = () =>  {
+    const { id } = useParams();
+    console.log(id)
+
   return (
     <div className="housingPage_items_position">
       <Header />

@@ -3,8 +3,8 @@
     padding-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .aboutPage_dropdown_items_position {
@@ -15,5 +15,5 @@
 }
 
 .aboutPage_footer_position {
-    margin-top: 20px;
+    margin-top: auto;
 }
