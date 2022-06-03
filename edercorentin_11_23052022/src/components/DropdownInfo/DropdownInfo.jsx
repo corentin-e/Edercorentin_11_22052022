@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./dropdown_info.css";
 
-function DropdownInfo({dropdownTitle}, {dropdownText}) {
+function DropdownInfo({dropdownTitle, dropdownText}) {
   const [isActiveDropDown, setIsActiveDropDown] = useState(false);
 
   const dropdownButtonFunction = () => {
