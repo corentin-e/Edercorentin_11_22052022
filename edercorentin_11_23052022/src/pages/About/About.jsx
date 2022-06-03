@@ -3,7 +3,7 @@ import { Header, Banner, Footer, DropdownInfo } from "../../components";
 import React from "react";
 import AboutImage from "../../assets/about_image.jpg";
 
-function About() {
+const About = () => {
   return (
     <div className="aboutPage_items_position">
       <Header />

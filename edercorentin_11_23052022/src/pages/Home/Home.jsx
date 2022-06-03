@@ -4,7 +4,7 @@ import data from "../../data.json"
 import React from "react";
 import WelcomeImage from "../../assets/welcome_image.jpg";
 
-function Home() {
+const Home = () => {
   return (
     <div className="homePage_items_position">
       <Header />

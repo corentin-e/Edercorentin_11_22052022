@@ -3,7 +3,7 @@ import { Header, Footer } from "../../components";
 import { Link } from "react-router-dom"
 import React from "react";
 
-function Error() {
+const Error = () => {
   return (
     <div className="errorPage_items_position">
       <Header />

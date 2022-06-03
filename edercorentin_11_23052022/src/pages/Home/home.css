@@ -1,6 +1,7 @@
 .homePage_items_position {
     padding-right: 30px;
     padding-left: 30px;
+    min-height: 100vh;
 }
 
 .homePage_housing_position {

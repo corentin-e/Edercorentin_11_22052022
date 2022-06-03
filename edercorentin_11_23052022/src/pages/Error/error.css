@@ -1,7 +1,7 @@
 .errorPage_items_position {
     padding-right: 30px;
     padding-left: 30px;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .errorPage_text_items_position {

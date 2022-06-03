@@ -1,16 +1,20 @@
 import "./housing.css";
-import { Header, Footer } from "../../components";
+import { Header, Footer, Carrousel } from "../../components";
+import data from "../../data.json"
 import React from "react";
-import { useParams } from 'react-router-dom';
 
 const Housing = () =>  {
-    const { id } = useParams();
-    console.log(id)
+
+    const images = data.housings.map(housing => (housing.pictures));
+    console.log(images)
 
   return (
     <div className="housingPage_items_position">
       <Header />
-      <div className="housingPage_text_items_position">
+      <div className="housingPage_items_position">
+      {data.housings.map(housing => (
+          <Carrousel image_source={housing.pictures}/>
+      ))}
       </div>
       <div className="housingPage_footer_position"/>
         <Footer/>

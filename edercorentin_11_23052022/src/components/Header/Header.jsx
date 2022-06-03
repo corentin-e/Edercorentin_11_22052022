@@ -8,13 +8,13 @@ function Header() {
     <div className="header_items_position">
       <img src={logo} alt="Logo_kasa" className="header_logo" />
       <div className="header_navbar">
-        <Link to="/">
+        <Link to="/" className="header_link">
           <label className="header_navbar_items">Acceuil</label>
         </Link>
         {/* <Link to="error">
           <label className="header_navbar_items">Erreur</label>
         </Link> */}
-        <Link to="about">
+        <Link to="about" className="header_link">
           <label className="header_navbar_items">À Propos</label>
         </Link>
       </div>

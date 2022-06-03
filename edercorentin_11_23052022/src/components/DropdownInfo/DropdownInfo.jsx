@@ -10,12 +10,12 @@ function DropdownInfo({dropdownTitle, dropdownText}) {
   return (
     <div className="dropdown_structure">
       <div className="dropdown_background">
-        <div className="dropdown_header">
+        <div className="dropdown_header" onClick={dropdownButtonFunction}>
           <div className="dropdown_items">
             <label className="dropdown_item_text">
             {dropdownTitle}
             </label>
-            <div className="dropdown_button" onClick={dropdownButtonFunction}>
+            <div className="dropdown_button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

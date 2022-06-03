@@ -1,10 +1,10 @@
 .housingPage_items_position {
     padding-right: 30px;
     padding-left: 30px;
-    height: 100%;
+    min-height: 100vh;
 }
 
-.housingPage_text_items_position {
+.housingPage_items_position {
     display: flex;
     justify-content: center;
     align-items: center;

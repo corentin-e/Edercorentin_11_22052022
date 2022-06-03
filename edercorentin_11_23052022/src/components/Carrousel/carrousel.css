@@ -1,0 +1,33 @@
+.carrousel_background {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .carrousel_items_position {
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+    padding-bottom: 20px;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .carrousel_image {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .carrousel_background {
+      height: 100px;
+    }
+  
+    .carrousel_items_position {
+      font-size: 20px;
+    }
+  }
+  
