@@ -11,7 +11,7 @@ function Home() {
       <Banner image={WelcomeImage} textWelcome="Chez vous, partout et ailleurs" />
       <div className="homePage_housing_position">
         {data.housings.map(housing => (
-          <Card key={housing.id} title={housing.title} image_source={housing.cover}/>
+          <Card key={housing.id} title={housing.title} image_source={housing.cover} id={housing.id}/>
         ))}
       </div>
       <div className="homePage_footer_position"/>

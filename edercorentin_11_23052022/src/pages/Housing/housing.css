@@ -1,0 +1,23 @@
+.housingPage_items_position {
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 100%;
+}
+
+.housingPage_text_items_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.housingPage_footer_position {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .housingPage_text_items_position {
+        margin-top: 100px;
+    }
+}
