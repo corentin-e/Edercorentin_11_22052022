@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./dropdown_list.css";
 
-function DropdownList() {
+function DropdownList({dropdownTitleList, housingId}) {
   const [isActiveSelector, setIsActiveSelector] = useState(false);
 
   const selectorButtonFunction = () => {
@@ -10,11 +10,11 @@ function DropdownList() {
   return (
     <div className="selector_structure">
       <div className="selector_header">
-        <div className="selector_items">
+        <div className="selector_items" onClick={selectorButtonFunction}>
           <label className="selector_item_text">
-            Test selector {/* {selector_info_title} */}
+            {dropdownTitleList}
           </label>
-          <div className="selector_button" onClick={selectorButtonFunction}>
+          <div className="selector_button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -34,7 +34,12 @@ function DropdownList() {
         }
         id="selectorInfo"
       >
-        <label>Test text</label>
+        <ul>
+          {housingId.equipments.map(equipment => (
+            <li>{equipment}</li>
+          ))
+          }
+        </ul>
       </div>
     </div>
   );

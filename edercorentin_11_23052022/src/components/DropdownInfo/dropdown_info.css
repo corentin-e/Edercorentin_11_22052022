@@ -3,12 +3,12 @@
   flex-direction: column;
   position: relative;
   width: 100%;
-  margin-top: 20px;
 }
 .dropdown_background {
   background-color: rgb(231, 221, 221);
   border-radius: 5px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .dropdown_header {
@@ -29,6 +29,7 @@
 .dropdown_item_text {
   padding: 5px;
   color: white;
+  font-size: 18px;
 }
 
 .dropdown_button {
@@ -49,7 +50,20 @@
 
 .dropdown_info_isActive {
   color: #fe6666;
-  padding: 10px;
+  padding-top: 30px;;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
   flex-wrap: wrap;
   display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown_background {
+    margin-bottom: 10px;
+  }
+
+  .dropdown_item_text {
+    font-size: 14px;
+  }
 }

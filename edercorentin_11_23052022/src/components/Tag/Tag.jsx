@@ -1,7 +1,7 @@
 import "./tag.css";
 
-function Tag() {
-  return <label className="tag_background">Tag name</label>;
+function Tag({tagName}) {
+  return <label className="tag_background">{tagName}</label>;
 }
 
 export default Tag;
