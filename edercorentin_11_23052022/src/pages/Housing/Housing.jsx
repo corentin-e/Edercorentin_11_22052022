@@ -1,5 +1,5 @@
 import "./housing.css";
-import { Header, Footer, Tag, DropdownInfo, DropdownList, /* Carrousel  */} from "../../components";
+import { Header, Footer, Tag, DropdownInfo, DropdownList, Rating, /* Carrousel  */} from "../../components";
 import data from "../../data.json"
 import React from "react";
 import { useParams } from 'react-router-dom';
@@ -33,6 +33,7 @@ const Housing = () =>  {
                     <img src={housingId.host.picture} alt="" className="housingPage_image_host_position"/>
                   </div>
               </div>
+              <Rating rating={housingId.rating}/>
           </div>
         </div>
         <div className="housingPage_housing_infos">

@@ -26,10 +26,11 @@
 .housingPage_tags_items_position {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .housingPage_housing_host_details {
+    display:flex;
     flex-direction: column;
 }
 
@@ -39,6 +40,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 0px;
+    justify-content: flex-start;
 }
 
 .housingPage_name_host {
@@ -109,7 +111,8 @@
     }
 
     .housingPage_host {
-       margin-top: 20px;
+       margin-top: 0px;
+       justify-content: flex-end;
     }
 
     .housingPage_image_host_border {
@@ -125,4 +128,11 @@
         width: 100%;
         margin-top: 10px;
     }
+
+    .housingPage_housing_host_details {
+        margin-top:10px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
 }

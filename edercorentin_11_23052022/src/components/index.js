@@ -6,3 +6,4 @@ export { default as Tag } from "./Tag/Tag";
 export { default as Header } from "./Header/Header";
 export { default as Footer } from "./Footer/Footer";
 export { default as Carrousel } from "./Carrousel/Carrousel";
+export { default as Rating } from "./Rating/Rating";
