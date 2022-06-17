@@ -1,5 +1,5 @@
 import "./housing.css";
-import { Header, Footer, Tag, DropdownInfo, DropdownList, Rating, /* Carrousel  */} from "../../components";
+import { Header, Footer, Tag, DropdownInfo, DropdownList, Rating, Carrousel} from "../../components";
 import data from "../../data.json"
 import React from "react";
 import { useParams } from 'react-router-dom';
@@ -14,6 +14,7 @@ const Housing = () =>  {
   return (
     <div className="housingPage_page_position">
       <Header />
+      <Carrousel housingId={housingId}/>
       <div className="housingPage_items_position">
         <div className="housingPage_profile_items_position">
           <div className="housingPage_housing_details">

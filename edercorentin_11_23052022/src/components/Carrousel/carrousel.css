@@ -9,18 +9,53 @@
   }
   
   .carrousel_items_position {
-    color: white;
-    font-size: 45px;
-    padding: 10px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 240px;
     z-index: 1;
     position: absolute;
+  }
+
+  .carrousel_info_position_housing_image {
+    display: flex;
+    align-items: flex-end;
+    color: white;
   }
   
   .carrousel_image {
     width: 100%;
   }
+
+  .carrousel_icons {
+    width: 150px;
+    height: 150px;
+  }
+
+  .carrousel_position_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .carrousel_button_previous {
+    background-color: brown;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+  }
   
+  .carrousel_button_next {
+    background-color: brown;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+  }
   @media screen and (max-width: 700px) {
     .carrousel_background {
       height: 100px;
