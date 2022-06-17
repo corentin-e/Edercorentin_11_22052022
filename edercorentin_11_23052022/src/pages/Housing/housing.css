@@ -2,6 +2,8 @@
     padding-right: 30px;
     padding-left: 30px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .housingPage_items_position {
