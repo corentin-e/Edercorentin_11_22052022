@@ -1,6 +1,20 @@
 import "./carrousel.css";
 
+
+
 const Carrousel = ({housingId}) => (
+  /* const  [picture, setPicture] = useState(housingId.pictures.picture)
+
+  const nextImageHousing = () => {
+      setPicture(picture + 1)
+      incrementPositionImageHousing()
+  }
+
+  const previousImageHousing = () => {
+    setPicture(picture - 1)
+    incrementPositionImageHousing()
+  } */
+
   <div className="carrousel_background">
     {housingId.pictures.map(picture =>(
       <img type="jpg" src={picture} className="carrousel_image" alt="housing_image" />
