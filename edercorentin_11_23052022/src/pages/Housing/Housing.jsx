@@ -14,7 +14,7 @@ const Housing = () =>  {
   return (
     <div className="housingPage_page_position">
       <Header />
-      <Carrousel housingId={housingId}/>
+      <Carrousel pictures={housingId.pictures}/>
       <div className="housingPage_items_position">
         <div className="housingPage_profile_items_position">
           <div className="housingPage_housing_details">
