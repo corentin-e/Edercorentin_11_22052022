@@ -3,9 +3,11 @@ import "./dropdown_list.css";
 
 function DropdownList({dropdownTitleList, housingId}) {
   const [isActiveSelector, setIsActiveSelector] = useState(false);
+  const [isActiveIcon, setIsActiveIcon] = useState(false);
 
   const selectorButtonFunction = () => {
     setIsActiveSelector((current) => !current);
+    setIsActiveIcon((current) => !current);
   };
   return (
     <div className="selector_structure">
@@ -14,7 +16,11 @@ function DropdownList({dropdownTitleList, housingId}) {
           <label className="selector_item_text">
             {dropdownTitleList}
           </label>
-          <div className="selector_button">
+          <div className={
+            isActiveIcon 
+            ? "selector_button"
+            : "selector_button_rotate"
+            }>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

@@ -10,6 +10,7 @@
   background-color: #fe6666;
   border-radius: 5px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .selector_items {
@@ -27,6 +28,10 @@
 
 .selector_button {
   cursor: pointer;
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .selector_item_icon {

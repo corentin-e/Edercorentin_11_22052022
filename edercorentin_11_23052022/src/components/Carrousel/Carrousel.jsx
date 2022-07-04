@@ -1,4 +1,6 @@
 import "./carrousel.css";
+import ArrowRightIcon from "../../assets/icons/arrowRight.png";
+import ArrowLeftIcon from "../../assets/icons/arrowLeft.png";
 import {useState} from "react";
 
 
@@ -23,8 +25,13 @@ const Carrousel = ({pictures}) => {
             <img type="jpg" src={pictures[imgPos]} className="carrousel_image" alt="housing_image" />
             <div className="carrousel_items_position">
                 <div className="carrousel_position_buttons">
-                    <div className="carrousel_button_previous" onClick={prev}> ← </div>
-                    <div className="carrousel_button_next" onClick={next}>  → </div>
+                    <div className="carrousel_button_previous" onClick={prev}>
+                        <img src={ArrowLeftIcon} alt="arrow left" />
+                        
+                    </div>
+                    <div className="carrousel_button_next" onClick={next}> 
+                        <img src={ArrowRightIcon} alt="arrow right" />
+                    </div>
                 </div>
                 <div className="carrousel_info_position_housing_image">{imgPos+1}/{pictures.length}</div>
             </div>
