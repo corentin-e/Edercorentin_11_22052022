@@ -1,11 +1,13 @@
 .banner_background {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 250px;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .banner_items_position {

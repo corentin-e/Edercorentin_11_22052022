@@ -14,9 +14,7 @@ const Error = () => {
             <label className="errorPage_backhome_item">Retourner sur la page d'acceuil</label>
         </Link>
       </div>
-      <div className="errorPage_footer_position"/>
         <Footer/>
-      <div/>
     </div>
   );
 }

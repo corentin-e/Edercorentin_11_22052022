@@ -1,11 +1,13 @@
 .carrousel_background {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 400px;
-    border-radius: 20px;
+    border-radius: 50px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .carrousel_items_position {

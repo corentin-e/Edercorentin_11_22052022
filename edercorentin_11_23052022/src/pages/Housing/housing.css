@@ -1,6 +1,4 @@
 .housingPage_page_position {
-    padding-right: 30px;
-    padding-left: 30px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,6 +10,8 @@
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .housingPage_profile_items_position {

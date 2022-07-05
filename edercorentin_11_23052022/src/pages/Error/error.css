@@ -1,6 +1,6 @@
 .errorPage_items_position {
-    padding-right: 30px;
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .errorPage_code_item{

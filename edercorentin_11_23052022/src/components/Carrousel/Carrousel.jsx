@@ -27,7 +27,6 @@ const Carrousel = ({pictures}) => {
                 <div className="carrousel_position_buttons">
                     <div className="carrousel_button_previous" onClick={prev}>
                         <img src={ArrowLeftIcon} alt="arrow left" />
-                        
                     </div>
                     <div className="carrousel_button_next" onClick={next}> 
                         <img src={ArrowRightIcon} alt="arrow right" />
