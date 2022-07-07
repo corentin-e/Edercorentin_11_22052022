@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./dropdown_list.css";
 
-function DropdownList({dropdownTitleList, housingId}) {
+function DropdownList({dropdownTitleList, housingId /* isActiveSelector, setIsActiveSelector */}) {
+  
   const [isActiveSelector, setIsActiveSelector] = useState(false);
   const [isActiveIcon, setIsActiveIcon] = useState(false);
+  
 
   const selectorButtonFunction = () => {
     setIsActiveSelector((current) => !current);
@@ -18,8 +20,8 @@ function DropdownList({dropdownTitleList, housingId}) {
           </label>
           <div className={
             isActiveIcon 
-            ? "selector_button"
-            : "selector_button_rotate"
+            ? "selector_button_isActive"
+            : "selector_button_isNotActive"
             }>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,21 +34,17 @@ function DropdownList({dropdownTitleList, housingId}) {
           </div>
         </div>
       </div>
-      <div
-        className={
-          isActiveSelector
-            ? "selector_info_isActive"
-            : "selector_info_isNotActive"
+      <ul className={
+        isActiveSelector
+          ? "selector_info_isActive"
+          : "selector_info_isNotActive"
+      }
+      id="selectorInfo">
+        {housingId.equipments.map(equipment => (
+          <li>{equipment}</li>
+        ))
         }
-        id="selectorInfo"
-      >
-        <ul>
-          {housingId.equipments.map(equipment => (
-            <li>{equipment}</li>
-          ))
-          }
-        </ul>
-      </div>
+      </ul>
     </div>
   );
 }

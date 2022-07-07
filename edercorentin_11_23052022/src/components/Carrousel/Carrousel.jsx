@@ -11,12 +11,16 @@ const Carrousel = ({pictures}) => {
     const next = () => {
         if(imgPos < pictures.length - 1) {
             setImgPos(imgPos + 1)
+        } else {
+            setImgPos(0)
         }
     }
 
     const prev = () => {
         if(imgPos > 0) {
             setImgPos(imgPos - 1)
+        } else {
+            setImgPos(pictures.length - 1)
         }
     }
 

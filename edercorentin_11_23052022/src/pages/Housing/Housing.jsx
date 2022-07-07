@@ -1,7 +1,7 @@
 import "./housing.css";
 import { Header, Footer, Tag, DropdownInfo, DropdownList, Rating, Carrousel} from "../../components";
 import data from "../../data.json"
-import React from "react";
+import { /* useState, useEffect, */ React} from "react";
 import { useParams } from 'react-router-dom';
 
 const Housing = () =>  {
@@ -10,6 +10,14 @@ const Housing = () =>  {
 
     const housingId = data.housings.find(housing => housing.id === id)
     console.log(housingId)
+
+
+
+   /* useEffect(() => {
+      if(isActiveDropDown) {
+        setIsActiveDropdown
+      }
+   }) */
 
   return (
     <div className="housingPage_page_position">
@@ -39,10 +47,10 @@ const Housing = () =>  {
         </div>
         <div className="housingPage_housing_infos">
           <div className="housingPage_housing_description">
-            <DropdownInfo dropdownTitle="Description" dropdownText={housingId.description}/>
+            <DropdownInfo dropdownTitle="Description" dropdownText={housingId.description} /* isActiveDropDown={isActiveDropDown} setIsActiveDropDown={setIsActiveDropDown} *//>
           </div>
           <div className="housingPage_housing_description">
-            <DropdownList dropdownTitleList="Équipements" housingId={housingId}/>
+            <DropdownList dropdownTitleList="Équipements" housingId={housingId} /* isActiveSelector={isActiveSelector} setIsActiveSelector={setIsActiveSelector} *//>
           </div>
         </div>
       </div>

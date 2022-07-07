@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-
 import Home from "./pages/Home/Home";
 import Housing from "./pages/Housing/Housing";
 import Error from "./pages/Error/Error";
@@ -13,7 +12,6 @@ function App() {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/housing/:id" element={<Housing />} />
-                    {/* <Route path="/error" element={<Error />} /> */}
                     <Route path="/about" element={<About />} />
                     <Route path="*" element={<Error />} />
                 </Routes>

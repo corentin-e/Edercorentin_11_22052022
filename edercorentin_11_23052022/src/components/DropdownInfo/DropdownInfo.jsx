@@ -1,16 +1,20 @@
 import { useState } from "react";
 import "./dropdown_info.css";
 
-function DropdownInfo({dropdownTitle, dropdownText}) {
-  const [isActiveDropDown, setIsActiveDropDown] = useState(false);
+function DropdownInfo({dropdownTitle, dropdownText /* setIsActiveDropDown, isActiveDropDown */}) {
   const [isActiveIcon, setIsActiveIcon] = useState(false);
+  const [isActiveDropDown, setIsActiveDropDown] = useState(false);
 
   const dropdownButtonFunction = () => {
+   /*  if(isActiveIcon === i && isActiveDropDown === i) {
+      setIsActiveIcon(null);
+      setIsActiveDropDown(null);
+    } */
     setIsActiveDropDown((current) => !current);
     setIsActiveIcon((current) => !current);
   };
   return (
-    <div className="dropdown_structure">
+    <div className="dropdown_structure" >
       <div className="dropdown_background">
         <div className="dropdown_header" onClick={dropdownButtonFunction}>
           <div className="dropdown_items">
@@ -19,8 +23,8 @@ function DropdownInfo({dropdownTitle, dropdownText}) {
             </label>
             <div className={
             isActiveIcon 
-            ? "dropdown_button"
-            : "dropdown_button_rotate"
+            ? "dropdown_button_isActive"
+            : "dropdown_button_isNotActive"
             }>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
