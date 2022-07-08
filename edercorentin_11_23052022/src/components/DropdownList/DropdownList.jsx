@@ -1,25 +1,17 @@
 import { useState } from "react";
 import "./dropdown_list.css";
 
-function DropdownList({dropdownTitleList, housingId /* isActiveSelector, setIsActiveSelector */}) {
-  
-  const [isActiveSelector, setIsActiveSelector] = useState(false);
-  const [isActiveIcon, setIsActiveIcon] = useState(false);
-  
+function DropdownList({dropdownTitleList, housingId, toggle, open}) {
 
-  const selectorButtonFunction = () => {
-    setIsActiveSelector((current) => !current);
-    setIsActiveIcon((current) => !current);
-  };
   return (
     <div className="selector_structure">
       <div className="selector_header">
-        <div className="selector_items" onClick={selectorButtonFunction}>
+        <div className="selector_items" onClick={toggle}>
           <label className="selector_item_text">
             {dropdownTitleList}
           </label>
           <div className={
-            isActiveIcon 
+            open
             ? "selector_button_isActive"
             : "selector_button_isNotActive"
             }>
@@ -35,7 +27,7 @@ function DropdownList({dropdownTitleList, housingId /* isActiveSelector, setIsAc
         </div>
       </div>
       <ul className={
-        isActiveSelector
+        open
           ? "selector_info_isActive"
           : "selector_info_isNotActive"
       }
