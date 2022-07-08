@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./dropdown_list.css";
 
 function DropdownList({dropdownTitleList, housingId, toggle, open}) {

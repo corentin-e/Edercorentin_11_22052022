@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./dropdown_info.css";
 
 const DropdownInfo = ({dropdownTitle, dropdownText, toggle, open}) => (

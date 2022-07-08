@@ -1,15 +1,12 @@
 import "./housing.css";
 import { Header, Footer, Tag, DropdownInfo, DropdownList, Rating, Carrousel} from "../../components";
 import data from "../../data.json"
-import { /* useState, useEffect, */ React, useState} from "react";
+import { React, useState} from "react";
 import {Navigate, useParams} from 'react-router-dom';
 
 const Housing = () =>  {
     const { id } = useParams();
     const housing = data.housings.find(housing => housing.id === id)
-
-    console.log(housing)
-
 
 
     const [infoOpen, setInfoOpen] = useState(false)

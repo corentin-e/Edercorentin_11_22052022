@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Housing from "./pages/Housing/Housing";
 import Error from "./pages/Error/Error";
@@ -14,7 +14,6 @@ function App() {
                     <Route path="/housing/:id" element={<Housing />} />
                     <Route path="/about" element={<About />} />
                     <Route path="*" element={<Error />} />
-                    {/* <Navigate to="**" /> */}
                 </Routes>
             </BrowserRouter>
         </div>
